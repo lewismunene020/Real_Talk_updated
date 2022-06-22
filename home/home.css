@@ -1,0 +1,249 @@
+*{
+    padding:0;
+    margin:0;
+}
+/*root for global variables */
+:root{
+    --color-white: hsl(252 ,  30% , 100%) ;
+    --color-light :hsl(252 , 30% , 905%);
+    --color-gray :hsl(252 , 15% , 65%);
+    --color-primary: hsl(252 ,75% ,60%);
+    --color-success :hsl(120 ,95% , 65%);
+    --color-danger : hsl(0 ,95% , 65%);
+    --color-dark : hsl(252 , 30% ,17%);
+    --color-black : hsl(252 , 30% , 17% );
+    --color-body-background: rgba(0, 0, 0, 0.425);
+    --color-blue:skyblue;
+    --fieldset-background:rgba(255, 255, 255, 0.692);
+    --header--background-color: linear-gradient(90deg,rgb(0, 0, 0),rgb(0, 128, 117));
+    --body-box-shadow : 1px 0  2px 0 rgba(0,0,0,0.1);
+    --legend-color:red;
+    --fieldset-border :  1px solid green;
+    --primary-max-width:600px;
+
+    --header-height:90px;
+    
+    /*--color-blue: rgba(0 ,10 ,255 ,0.6);*/
+}
+body{
+    margin:auto;
+    /* max-width:var(--primary-max-width); */
+    /* background:var(--color-body-background); */
+    font-family:"High Tower Text";
+    font-weight:  bolder; 
+    /* font-style: oblique;  */
+    font-size: x-large;
+    color:#5a5a5a;
+     box-shadow:var(--body-box-shadow) ;
+    border-radius:5px;
+    padding-bottom:20px;
+}
+
+
+.header{
+
+    display: flex;
+    flex-direction:column;
+    /* background: #9e959549; */
+    background: green;
+
+    padding: 5px;
+    height:90px;
+    /* padding-top: 0; */
+    font-weight:bold;  font-size:xx-large;
+    color:white;
+    border-radius:5px;  
+    /* border-bottom:1px solid #e6e6e6;  f */
+    position:fixed; 
+    top: 0;   
+    width:100%;
+    
+}  
+
+
+/* userdata description  */
+#user-data{
+    margin: 0;
+    display: flex;
+    gap: 25%;
+    /* justify-content:space-between; */
+    background:inherit;
+ 
+    /* margin-top: -12px; */
+     border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+     /* padding: 15px; padding-bottom: 5px; */
+     font-size: medium;
+ }
+
+
+ /* responsiveness of the userdata  */
+
+@media screen and (min-width:700px){
+     #user-data{
+         gap: 30%;
+     }
+}
+
+
+@media screen and (min-width:900px){
+    #user-data{
+        gap: 35%;
+    }
+}
+
+/* user profile decription */
+#user-details{
+    display: flex; flex-direction: row; align-items: center;gap: 10px;
+}
+.user-profile-img{border-radius: 50%;
+     width: 50px; height: 50px;}
+.username{color: white;}
+#active{color: aqua;}
+#log-out{background: purple;
+    padding: 10px; border-radius: 5px;
+    text-decoration: none;
+}
+#log-out a{
+    color: white; text-decoration: none;
+}
+
+
+
+
+/* top-bar-description */
+.top-bar{
+    
+    padding: 0;
+    position:relative;
+    top:120px;
+    /* width: 558.5px; */
+    width:100%;
+    
+}
+/*removing the scroll bar   */
+::-webkit-scrollbar{
+    width: 0;
+}
+
+
+ /* search box css code  */
+ .search-icon{
+    height: 45px;
+    width: 45px;
+    border-radius:var(--primary-border-radius);
+}
+.search-box{
+    border-bottom: 1px solid #5a5a5a4d;
+    width: 80%;
+    height:fit-content;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    /* margin-top: 0px;margin-left: 25px; */
+    background: #000;
+    margin: auto;
+    /* padding: 15px; */
+}
+.search-box input{
+    height: 75%;
+    /* margin: 10px; */
+    border-radius: 5px; border: none;
+    background: var(--search-box-background); 
+    width: 90%;
+    padding-left: 12px;
+    font-family: "High Tower Text" ,"Times New Roman",sans-serif , serif;
+    font-style: oblique;font-weight: bolder;font-size:30px;
+    /* outline: none; */
+    display: none;
+    margin-left: 20px;
+
+}
+.select-contact{
+    padding-left: 60px;
+}
+#search-tool{
+    display: none;
+}
+
+#select-tool{
+   
+    display: block;
+}
+#cancel-icon{
+    height: 30px; width: 30px;
+}
+
+::placeholder{
+    color: rgba(0, 0, 0, 0.404);
+    padding-left: 10px; font-family: "High Tower Text" ,"Times New Roman",sans-serif , serif;
+    font-style: oblique;font-weight: bolder;font-size:xlarge;
+}
+
+/* contacts css code happens here  */
+.contacts{
+    margin-top: 160px;
+}
+.contact-link{
+    text-decoration: none;
+}
+.search-result{
+    margin-top: 170px;
+    display: none;
+}
+
+
+
+/* home-display */
+
+.home-display{
+    display: flex;
+    flex-direction: row;
+
+}
+
+/* contact box body   */
+
+#contact-box-body{
+    min-height: 500px;
+    padding: 10px;border-radius: 5px;
+    background: rgba(245, 245, 245, 0.705);
+    height: fit-content;
+    width:100%;
+}
+#contact-box{
+    padding: 10px;border-radius: 5px;
+    width: 100%;
+    /* background: rgba(245, 245, 245, 0.705); */
+    
+}
+
+
+
+
+
+
+
+
+.contact{
+    background:rgba(245, 245, 245, 0.562); 
+    padding: 10px; padding-top: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-bottom: 5px;
+    box-shadow: 5px 5px 40px rgba(0, 0, 0, 0.096) ;
+}
+.contact-data{
+    margin-top: 5px; align-items: center;gap: 10px;
+    display: flex;
+}
+/* message-data */
+.message-data{
+    display: flex; justify-content: space-between;
+    margin-left: 20px;
+    margin-top: 8px; font-size: 15px;
+}
+.message-data #message{color: blue;}
+.message-data #new-message{background: rgb(231, 27, 13);
+height: 10px;width: 10px; border-radius: 50%;}

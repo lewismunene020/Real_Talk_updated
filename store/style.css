@@ -1,0 +1,152 @@
+*{
+    padding:0;
+    margin:0;
+}
+/*root for global variables */
+:root{
+    --color-white: hsl(252 ,  30% , 100%) ;
+    --color-light :hsl(252 , 30% , 905%);
+    --color-gray :hsl(252 , 15% , 65%);
+    --color-primary: hsl(252 ,75% ,60%);
+    --color-success :hsl(120 ,95% , 65%);
+    --color-danger : hsl(0 ,95% , 65%);
+    --color-dark : hsl(252 , 30% ,17%);
+    --color-black : hsl(252 , 30% , 17% );
+    --color-body-background: rgba(0, 0, 0, 0.425);
+    --color-blue:skyblue;
+    --fieldset-background:rgba(255, 255, 255, 0.692);
+    --header--background-color: linear-gradient(90deg,rgb(0, 0, 0),rgb(0, 128, 117));
+    --body-box-shadow : 1px 0  2px 0 rgba(0,0,0,0.1);
+    --legend-color:red;
+    --fieldset-border :  1px solid green;
+    /*--color-blue: rgba(0 ,10 ,255 ,0.6);*/
+}
+body{
+    margin:auto;
+    /* max-width:600px; */
+    background:var(--color-body-background);
+    font-family:"High Tower Text"; font-weight:  bolder;  font-style: oblique; font-size: x-large;
+color:#5a5a5a;    
+box-shadow:var(--body-box-shadow) ;
+  /* border:1px solid #5a5a5a;*/
+     border-radius:5px;
+     padding-bottom:20px;
+}
+
+/*removing the scroll bar   */
+::-webkit-scrollbar{
+    width: 0;
+}
+/* scroll bar  hidden successfully  */
+
+#sign-up-form{
+    padding: 10px;
+    border-radius: 5px;
+    background: rgba(245, 245, 245, 0.705);
+    width: 1000px;
+    max-width: 100%;
+    /* display: none; */
+}
+#login-form{
+    padding: 10px;border-radius: 5px;background: rgba(245, 245, 245, 0.705);
+}
+header{
+    padding-top:20px;height:50px;
+     background:var(--header--background-color);
+     font-weight:bolder; 
+     font-size:40px;position:sticky; 
+     padding-left:30%;color:white;
+     border-radius:5px;  
+     border-bottom:1px solid #e6e6e6;        
+}  
+#signup-success{
+    background:green;
+    font-weight:bolder;
+    color:white;
+    border-radius: 5px; 
+    padding-left:20px;
+    margin-left:35%;
+    width:max-content;
+    margin-top:10px;
+    font-size:20px;font-weight:bolder;
+}
+
+fieldset{
+    color:rgba(0, 0, 0, 0.788);margin:20px 20px 20px 20px;max-width:600px;
+    border:none;
+    border-radius:5px;
+    background:var(--fieldset-background);
+    width: 400px;
+    max-width: 100%;
+    /* background: none; */
+   
+}
+legend{
+margin-left: calc(25% );
+color:var(--legend-color);font-weight:bolder;
+font-size:20px;
+margin-bottom: 12px;
+}
+.error-indicator{
+    color: red;
+    background: rgba(219, 12, 12, 0.226);
+    font-weight: lighter;
+    margin-left: 105px;
+    width: 300px;
+    border-radius: 3px;
+    
+    display: none;
+    
+}
+form{
+    margin-top: 20px; 
+}
+
+label{font-weight:bolder; margin-left:10px;}
+input{ display: block; }
+#profile-photo-section{ display: flex;}
+#profile-photo-section input{
+    width: 255px;
+}
+.input_form{
+    border-radius:5px;
+    border:1px solid lightblue;
+    height:30px; outline: none;
+    padding-left: 15px;
+    font-family:"High Tower Text"; font-weight:  bolder;  font-style: oblique; font-size: x-large;
+    color:#333;
+}
+.input-form,  input::placeholder{
+    color: rgba(51, 51, 51, 0.233);
+    font-size: large;
+}
+
+.input_form select {margin-left: 2rem;}
+.submit{
+    font-weight:bold;color:white;border:none;background:blue;
+    padding:10px 15px;border-radius:5px; margin-left:12rem;font-size:20px; margin-bottom: 2rem;
+}
+.gender-select{margin-left: 0.5 rem;}
+#message{
+    background: rgb(252, 4, 4);color:white;border-radius:5px;margin-left: 10rem;
+}
+#login{ margin-left: 3rem; margin-bottom: 3rem;}
+.pass{margin-left: 4.9rem;}
+#password2{ margin-left: 4.2rem;}
+#password-icon{height: 30; width: 30;}
+#show-password{display: flex; width: fit-content; }
+#hide-pass{display:none;}
+#show-pass{display: block;}
+
+/* setting margin-left */
+.input-section{  display: flex; width: fit-content;  }
+.input-section .first-name{margin-left: 3.3rem;}
+.input-section .last-name{margin-left: 3.65rem;}
+.input-section .email{margin-left: 5.7rem;}
+#profile-photo{margin-left: 2.6rem;}
+.input-section .gender{margin-left: 5.9rem;}
+.input-section #password1{margin-left: 4.7rem;}
+.input-section #password2{margin-left: 4.9rem;}
+
+
+

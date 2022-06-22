@@ -1,0 +1,34 @@
+
+<style>
+#search-body{
+    background: rgba(0, 0, 0, 0.178); padding: 50px; top:150px
+}
+.search-icon{
+    height: 45px;
+    width: 45px;
+    border-radius:var(--primary-border-radius);
+    /* background:var(--icon-background-light-mode) */
+}
+.search-box{
+    background:white;
+    width: 90%;
+    height:50px;border-radius: 5px;
+    display: flex; align-items:center;
+    margin-top: 5px;margin-left: 5px;
+}
+.search-box input{
+    height: 75%;margin: 10px;border-radius: 5px; border: none;
+    background: var(--search-box-background); width: 90%;
+}
+::placeholder{
+    color: rgba(0, 0, 0, 0.404);
+    padding-left: 10px; font-family: "High Tower Text" ,"Times New Roman",sans-serif , serif;
+    font-style: oblique;font-weight: bolder;font-size:large;
+}
+</style>
+<div id="search-body">
+    <div class="search-box">
+        <input required type="text" placeholder="Type Song or Playlist To search"name="song-name" id="search-user">
+        <span id="search-tool"class="search-tool"><img class="search-icon" src="/AfriMusic/Icons_and_Images/light-mode-search-icon.png" alt=""></span>
+    </div><br> 
+</div>

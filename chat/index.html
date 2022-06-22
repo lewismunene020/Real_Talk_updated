@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="chat-box.css">
+        <link rel="stylesheet" href="/Real_Talk/fontawesome/css/all.css">
+
+            
+            <title>Real Talk Chat</title>
+    </head>
+<body>
+
+<div id="chat-box-body">
+    
+
+  <!-- implement feature that helps to reload the online and offline status each time  -->
+
+    <div class="top-bar">
+        <div class="back-arrow ">
+            <button id="back-arrow-btn"class="back-arrow-image"> <i class="fas  fa-arrow-left" style="  color: white;
+   width: max-content;" ></i></button>
+
+
+        </div>
+        <div id="user-data">
+                <div id ="user-details">
+                    <div class="user-profile"><img class="user-profile-img"src="" alt=""></div>
+                    <div class="username user-full-name"></div> 
+                </div>
+                <div id="active" class="online-offline-status"></div>  
+                <!-- options icon should be situated here  -->
+                <div class="options"></div> 
+               
+        </div>
+        <div class="typing-status"></div>
+        <!-- TSearch message  -->
+
+        <!-- <div class="search-box">
+            <input required type="text" placeholder="Search Contact"name="song-name" id="search-user">
+            <span id="search-tool"class="search-tool"><img class="search-icon" src="light-mode-search-icon.png" alt=""></span>
+        </div><br>  -->
+
+       
+    </div>
+    <!-- chat-box-->
+    <div id="chat-box" class="chat-box">
+
+         
+
+          
+
+
+
+    </div>
+</div> 
+
+
+<!-- lets display typing moment  -->
+<!-- <form action="" class="typing" method="post">
+    <input class="typing-field" type="text" name="typing" value="" hidden >
+</form> -->
+
+<!-- sending the message  -->
+    <form id="typing-area"class="send-message" action="#" autocomplete="off">
+        <input class="outgoing_id" name="outgoing_id" type="text" value="" hidden><!--session   id  is set here -->
+        <input class="incoming_id" name="incoming_id"type="text" value="" hidden>   <!--user id  is set here -->
+        <input class="typing-field" type="text" name="typing" value="" hidden >
+        <input name="message"class="input-field"  type="text" placeholder="Type a message ......">
+        <button class="send-button "><img class="send-icon" src="/Real_Talk/Images_and_icons/sendIcon.png" alt=""></button>
+    </form>
+    
+
+    <script src="/Real_Talk/fontawesome/js/all.js"></script>
+  
+<script src="/Real_Talk/utilities/favicon_creator.js"></script>
+<script src="session_checker.js"></script>
+<script src="chat-box.js"></script>
+<script src="chat.js"></script>
+</body>
+</html>

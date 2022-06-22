@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Real_Talk/accounts/style.css">
+    
+      <link rel="stylesheet" href="/Real_Talk/fontawesome/css/all.css">
+    <!-- <link rel="stylesheet" href="/fontawesome/css/all.css"> -->
+    <title>recover pasword </title>
+</head>
+<body>
+
+<div class="form-container">
+        <div class="header">
+            <h2>Recover Password </h2>
+        </div>
+
+ <div class="error-indicator"> Invalid  credentials </div>
+
+    <form action="#" class="recover-password-form">
+
+            <div class="email-address">
+
+                <div class="form-control">
+
+                    <label id="login-form-label">Email </label>
+                    
+                    <div class="input-control">
+                        <input class="login-form-input" name="email" id="user-email">
+                        <i class="fas form-validation-icons fa-check-circle valid-circle"></i>
+                        <i class="fas form-validation-icons fa-exclamation-circle error-circle"></i>
+                    </div>
+                    <small>Error message </small>
+                </div>
+                
+            </div>
+
+
+
+            <div class="verificationfield">
+
+                <div class="form-control">
+                    <label>Verification Code </label>
+
+                    <div class="input-control">
+                        <input type="password" name="verification-code" id="verification-code" class="input_form" required >
+                        <!-- font-awesome icons  -->
+                        
+                 
+                        <i class="fas fa-eye  eye-icons" onclick="show_hide_pass('#verification-code');" id="show-hide-icon"></i>
+                        
+                        <!-- <i class="fas fa-eye" style="color:green;"></i> -->
+                        <i class="fas form-validation-icons fa-check-circle valid-circle"></i>
+                        <i class="fas form-validation-icons fa-exclamation-circle  error-circle"></i>
+                    </div>
+            
+                    <small>Error Message </small>
+             
+               </div>
+            </div>
+
+            <div class="submit-form">
+                <button type ="submit" class="submit-btn" id="verification-btn">Send verification code</button> 
+            </div>
+
+            <p id="login">Didnt receive verification code????  <a href="/Real_Talk/recover-password/">resend</a></p>
+
+        
+           
+    </form>
+
+</div>
+
+<script src="/Real_Talk/utilities/utils.js"></script>
+
+<script src="/Real_Talk/fontawesome/js/all.js"></script>
+
+<script src="/Real_Talk/recover-password/show-hide-pass.js"></script>
+
+<script src="/Real_Talk/recover-password/verify-recovery/verify-recovery.js"></script>
+<script src="/Real_Talk/accounts/redirect.js"></script>
+
+<script src="/Real_Talk/utilities/favicon_creator.js"></script>
+<!-- <script src="/fontawesome/js/all.js"></script> -->
+</body>
+</html>
