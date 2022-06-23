@@ -3,7 +3,7 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        <link rel="stylesheet" href="/fontawesome/css/all.css">
         <link rel="stylesheet" href="home.css">
         <script src="jquery.js"></script>
             <title>Home</title>
@@ -20,28 +20,34 @@
             <div class="username"></div> 
         </div>
         <div id="active" class="activity-status"> </div> 
-        <a id="logout-link" href="" style="text-decoration:none ; color:white;"> <div id="log-out">Log Out</div>  </a>
+        <div id="log-out"><a id="logout-link" href="">Log Out</a></div>
         
     </div>
 </div>
 
 <!-- displays the chat box and  the contacts   -->
 <div class="home-display">
+
+    <!-- search bar display  -->
+    <div class="top-bar">
+
+        <div class="search-box" style>
+            <div class="select-contact">select Contact to start chat</div>
+            <input required type="text" placeholder="Search Contact"name="song-name" id="search-user">
+            <span id="search-tool"class="search-tool"><img class="search-icon" src="/Images_and_icons/light-mode-search-icon.png" alt=""></span>
+            <span id="select-tool"><img id="cancel-icon"src="/Images_and_icons/cancel_icon.png" alt="" class="search-icon"></span>
+        </div><br> 
+    </div>
+
+
+    
     <div id="contact-box">
 
             <div id="contact-box-body">
 
                 <!-- topbar html code  -->
 
-            <div class="top-bar">
-
-                <div class="search-box">
-                    <div class="select-contact">select Contact to start chat</div>
-                    <input required type="text" placeholder="Search Contact"name="song-name" id="search-user">
-                    <span id="search-tool"class="search-tool"><img class="search-icon" src="/Images_and_icons/light-mode-search-icon.png" alt=""></span>
-                    <span id="select-tool"><img id="cancel-icon"src="/Images_and_icons/cancel_icon.png" alt="" class="search-icon"></span>
-                </div><br> 
-            </div>
+   
 
             <!-- contacts display -->
             <div class="search-result">
@@ -70,5 +76,7 @@
 <script src="/javascript/home.js"></script>
 <script src="session_checker.js"></script>
 <script src="current_user.js"></script>
+<script src="/fontawesome/css/all.css"></script>
+
 </body>
 </html>

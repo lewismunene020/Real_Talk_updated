@@ -29,7 +29,7 @@ body{
     width: 100%;
     background:whitesmoke;
     font-family:"High Tower Text"; 
-    font-weight:  bolder; 
+    font-weight:medium ; 
     font-style: oblique;
     font-size: x-large;
     color:#5a5a5a; 
@@ -71,12 +71,12 @@ body{
     
 }
 /* typing status update  */
-.typing-status{
+/* .typing-status{
     color:rgb(100, 128, 0) ;
     background-color: rgb(15, 57, 243);
     border-radius: 5px;
     display: block;
-}
+} */
 
 /* userdata description  */
 #user-data{
@@ -122,12 +122,16 @@ body{
     width: 90%;
     padding-left: 12px;
     font-family: "High Tower Text" ,"Times New Roman",sans-serif , serif;
-    font-style: oblique;font-weight: bolder;font-size:30px;
+    font-style: oblique;
+    font-weight:medium;
+    font-size:30px;
 } 
 ::placeholder{
     color: rgba(0, 0, 0, 0.404);
     padding-left: 10px; font-family: "High Tower Text" ,"Times New Roman",sans-serif , serif;
-    font-style: oblique;font-weight: bolder;font-size:xlarge;
+    font-style: oblique;
+    font-weight:medium;
+    font-size:xlarge;
 }
 
 /* chat box CSS code */
@@ -208,7 +212,8 @@ body{
     background:rgba(0, 0, 0, 0.089);
     color: #333;
     font-family: "High Tower Text" ,"Times New Roman",sans-serif , serif;
-    font-style: oblique;font-weight: bolder;
+    font-style: oblique;
+    font-weight:medium;
     font-size: larger; padding-left: 22px;
     border-radius: 28px 0 0 28px;
     width: calc(100% - 58px); 
