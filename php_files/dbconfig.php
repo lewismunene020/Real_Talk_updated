@@ -3,12 +3,12 @@ require __DIR__.'/vendor/autoload.php';
 use Kreait\Firebase\Factory;
 use Kreait\Firebase\ServiceAccount;
 
-    $conn = mysqli_connect("sql4.freesqldatabase.com:3306" ,"sql4499851" ,"iRjSLcHdWB" , "sql4499851");
+    $conn = mysqli_connect("sql11.freesqldatabase.com:3306" ,"sql11501468" ,"LjuNgqIR8p" , "sql11501468");
 if(!$conn){
    echo "something went wrong";
 }
 else{
-        // echo "connection successful";
+        echo "connection successful";
 }
 
 $storage = (new Factory())
