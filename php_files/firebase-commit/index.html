@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload to firebase  </title>
+    <style>
+        *{
+            margin: 0; padding: 0;
+        }
+
+        .upload-file{
+            background: skyblue;
+            width: 80%;
+            height: 400px;
+            margin-top: 70px;
+        }
+
+        #upload{
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <center>
+        <div class="upload-file">
+            <form class="firebase-upload-form" action="" method="post">
+                <input id="upload"type="file" name="firebase-upload" accept="image/*" required> <br><br>
+                <input type="submit" value="upload">
+            </form>
+        </div>
+
+    </center>
+
+
+<script>
+
+    function select(identity){return document.querySelector(identity)}
+
+    const  form  = select('.firebase-upload-form')
+    form.onsubmit =(e) =>{
+        e.preventDefault();
+    }
+
+    const upload_btn = select('input[type="submit"]');
+    upload_btn.onclick=() =>{
+        let file  = select('input[type="file"]');
+
+        let xhr  = new XMLHttpRequest();
+        xhr.open('POST' , 'upload-file.php');
+
+        xhr.onload =() =>{
+            let data  =  xhr.response;
+            alert(data)
+        }
+
+        let  formData =  new FormData(form)
+        xhr.send(formData)
+    }
+
+
+
+</script>
+    
+</body>
+</html>
