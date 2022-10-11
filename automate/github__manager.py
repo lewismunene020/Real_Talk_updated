@@ -1,6 +1,6 @@
 
 import  os
-from automate import color__manager as cm
+from utils import color__manager as cm
 
 cm.printSuccess("Someone commited to your appprobably  you")
 
