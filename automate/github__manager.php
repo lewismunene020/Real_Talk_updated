@@ -16,7 +16,7 @@ $data = json_decode(file_get_contents('php://input'), true);
 // $pull  = exec('GREEN="\033[0;32m" && echo"$GREEN CHANGES PULLED SUCCESSFULLY "');
 // echo $pull;
 
-$reply  = exec("python3 github__manager.py");
+echo shell_exec("python3 github__manager.py");
 echo $reply;
 
 ?>
