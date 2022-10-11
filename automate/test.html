@@ -8,10 +8,16 @@
     <style>
         button{
             color: white;
-            border: none;
+            /* border: none; */
             background: #199dc9;
             font-size:30px;
             padding: 15px 25px;
+        }
+        .h1-indicate{
+            background-color: aqua;
+            color: white;
+            padding: 15px 25px;
+            display: none;
         }
         
 
@@ -20,6 +26,7 @@
 <body>
     <button class="github-btn" type="button">Click To Send Github Request</button>
 
+    <h1 class="h1-indicate">Github changes have  been  pulled successfully</h1>
     <script type="module">
         import {XHRCaller} from  "../utilities/XHRCaller.js"
 
@@ -38,6 +45,9 @@
 
         function  printResult(data){
             console.log(data)
+            let  h1 = document.querySelector(".h1-indicate")
+            h1.style.display="block";
+            btn.style.display="none"
         }
     </script>
 </body>
