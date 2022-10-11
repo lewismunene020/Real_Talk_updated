@@ -7,7 +7,7 @@
     }
     else{
         
-        // echo "connection  successful";
+        echo "connection  successful";
 
 
     //    inserting into data  
