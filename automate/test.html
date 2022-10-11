@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github Manager</title>
+    <style>
+        button{
+            color: white;
+            border: none;
+            background: #199dc9;
+            font-size:30px;
+            padding: 15px 25px;
+        }
+        
+
+    </style>
+</head>
+<body>
+    <button class="github-btn" type="button">Click To Send Github Request</button>
+
+    <script type="module">
+        import {XHRCaller} from  "../utilities/XHRCaller.js"
+
+        let  btn  =  document.querySelector(".github-btn")
+        btn.addEventListener("click" , function(e){
+            let data  = JSON.stringify({
+                "pull" : "completed  after the script  run ",
+                "script" : "github pull script  ran successfully "
+
+            })
+
+            XHRCaller(data , "./github__manager.php" ,printResult )
+
+
+        })
+
+        function  printResult(data){
+            console.log(data)
+        }
+    </script>
+</body>
+</html>
