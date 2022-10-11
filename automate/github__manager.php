@@ -16,5 +16,7 @@ echo $pull;
 $pull  = exec('GREEN="\033[0;32m" && echo"$GREEN CHANGES PULLED SUCCESSFULLY "');
 echo $pull;
 
+$reply  = shell_exec("./pullGit")
+
 
 ?>
