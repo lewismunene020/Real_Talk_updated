@@ -1,14 +1,15 @@
 #!/bin/bash
+pull master
 #  eval "$(ssh-agent -s)" 
 #  ssh-add  ~/.ssh/githubssh
 
-GREEN='\033[0;32m' 
+# GREEN='\033[0;32m' 
 
-git pull  origin master
+# git pull  origin master
 
 # echo "$data"
 
-echo -e "$GREEN CHANGES PULLED SUCCESSFULLY "
+# echo -e "$GREEN CHANGES PULLED SUCCESSFULLY "
 
 
 # command='eval$"(ssh-agent -s)" && ssh-add  ~/.ssh/githubssh && git pull  origin master '
