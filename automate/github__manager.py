@@ -11,6 +11,6 @@ from utils import color__manager as cm
 # os.system(command)
 # print(cmd.processData(command))
 # output  = cmd.processData(command)
-os.system('bash pullGit')
+os.system('pull master')
 
 # cm.printSuccess("Someone commited to your appprobably  you")

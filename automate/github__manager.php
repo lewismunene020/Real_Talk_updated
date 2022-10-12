@@ -4,7 +4,9 @@ $data = json_decode(file_get_contents('php://input'), true);
 
 // echo exec("bash phpExec");
 echo "<pre>";
-echo shell_exec('bash pullGit');
+// echo shell_exec('bash pullGit');
+execPrint("python3 github__manager.py");
+
 echo "</pre>";
 // foreach ($data as $data2 => $value) {
 //     echo "{ ".$data2." : ".$value." } \n\n";
