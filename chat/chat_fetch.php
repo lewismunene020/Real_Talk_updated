@@ -8,7 +8,7 @@
         }
         
         else{
-        include_once($_SERVER['DOCUMENT_ROOT'].'/Real_Talk/php_files/config.php');
+        include_once($_SERVER['DOCUMENT_ROOT'].'/php_files/config.php');
         $user_id = mysqli_real_escape_string($conn , $_GET['user_id']);
       
         $sql = mysqli_query($conn , "SELECT * from users where unique_id ='{$user_id}' ");
@@ -18,7 +18,7 @@
                 if(isset($_SESSION['unique_id'])){
                      $session_id = mysqli_real_escape_string($conn , $_SESSION["unique_id"]);
                      $full_name = $row['fname']."  ".$row['lname'];
-                     $profile_image = "/Real_Talk/php_files/Image_uploads/".$row['image'];
+                     $profile_image = "/php_files/Image_uploads/".$row['image'];
                      $status = $row['status'];
                      
                      $output = array(
