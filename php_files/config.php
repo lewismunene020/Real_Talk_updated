@@ -1,6 +1,8 @@
 <?php
    
-    $conn = mysqli_connect("localhost" ,"lewis" ,"Tvc@MuneneMysql" , "flaskChatApp");
+    // $conn = mysqli_connect("localhost" ,"lewis" ,"Tvc@MuneneMysql" , "flaskChatApp");
+    $conn = mysqli_connect("localhost" ,"root" ,"" , "realtalk");
+
 
     if(!$conn){
        echo "something went wrong";
