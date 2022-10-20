@@ -4,7 +4,7 @@ var back_arrow = select_query('#back-arrow-btn');
 
 back_arrow.onclick=() =>{
 
-    location.href="/Real_Talk/home/";
+    location.href="/home/";
 }
 
 

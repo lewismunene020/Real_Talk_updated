@@ -35,7 +35,7 @@
                 }
                 else{
                     $output .=' <div class=" chat incoming">
-                                <img src="/Real_Talk/php_files/Image_uploads/'.$row['image'].'" alt="">
+                                <img src="/php_files/Image_uploads/'.$row['image'].'" alt="">
                                 <div class="details">
                                         <p>'.$row['message'].'</p>
                                 </div>
@@ -54,7 +54,7 @@
         // if the user unique id is not set 
     }
     else{
-        header("location:/Real_Talk/User_Acccount/login.php");
+        header("location:/User_Acccount/login.php");
     }
 
 ?>
