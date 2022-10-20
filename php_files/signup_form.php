@@ -45,11 +45,11 @@ if( !empty($fname) && !empty($lname) && !empty($email) && !empty($password) ){
                             $new_img_name = $time . $image_name; // assigns the file a new name beginning with current time and ending with the file name 
 
                             // echo $new_img_name;
-                            $q1 =  move_uploaded_file($tmp_name , "/home/lewismunene/Desktop/PROJECTS/WEB_APPS/pHp/RealTalk/php_files/Image_uploads/".$new_img_name);
+                            // $q1 =  move_uploaded_file($tmp_name , "Image_uploads/".$new_img_name);
                             
                             // echo $q1 . "this is q1";
                             // lets move the file to the image uploads folder
-                            if(move_uploaded_file($tmp_name , "/php_files/Image_uploads/".$new_img_name) ){
+                            if(move_uploaded_file($tmp_name , "Image_uploads/".$new_img_name) ){
                                        
                           
 
