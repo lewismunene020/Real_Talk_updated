@@ -65,7 +65,13 @@ if( !empty($fname) && !empty($lname) && !empty($email) && !empty($password) ){
                                  $body = "http://localhost/Real_Talk/Verification/?unique_id=$random_id";
                                  $sender = "From:lewismunene020@gmail.com";
 
-                                 if( ! mail($receiver , $subject , $body , $sender) ){
+                                //  forcing email  sending  but will be configured later  
+
+                                $emailSent = true;
+                                
+                                if( $emailSent === true) {
+
+                                //  if( ! mail($receiver , $subject , $body , $sender) ){
                                     //  echo "email sent succesfully to  ".$receiver;
                                         
                                             //lets insert data into the databse

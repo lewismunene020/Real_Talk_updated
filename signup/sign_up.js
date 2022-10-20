@@ -14,7 +14,7 @@ form.onsubmit = (e) => {
 }
 
 continue_btn.onclick = () =>{
-    location.href="#"
+    // location.href="#"
     // lets match the passwords 
     var pass1_val = pass1.value ,pass2_val = pass2.value
     ,len1=pass1_val.length , len2 = pass2_val.length;
