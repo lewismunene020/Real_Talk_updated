@@ -1,0 +1,29 @@
+#!/bin/bash
+
+cd /opt/lampp/etc/extra
+folder=$PWD
+sitename="$1"
+
+#mousepad  httpd-vhosts.conf
+
+#ECOMMERCE WEBSITE  HOST CONFIGURATION
+
+echo 
+ '<VirtualHost *:80>
+    DocumentRoot "'$folder'"
+    ServerName '$sitename'
+    <Directory "/home/lewismunene/Desktop/PROJECTS/pHp/php-routing/">
+    	Options All
+    	AllowOverride All
+    	Require all granted
+    </Directory>
+</VirtualHost>'  >>  httpd-vhosts.conf
+
+
+#CONFIGURING THE VIRTUAL HOSTS IN  the  hosts  configuration 
+
+echo '127.0.1.1	'$sitename  >> /etc/hosts
+
+
+#echo '127.0.1.1	esoko-site.dev'  >> /etc/hosts
+

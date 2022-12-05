@@ -1,0 +1,11 @@
+<VirtualHost *:80>
+    DocumentRoot "/home/lewismunene/Desktop/PROJECTS/pHp/emoreWebsite/"
+    ServerName emore-site.dev
+    ErrorLog "logs/emore-site-error_log"
+    CustomLog "logs/emore-site-access-error_log" common
+    <Directory "/home/lewismunene/Desktop/PROJECTS/pHp/emoreWebsite">
+    	Options All
+    	AllowOverride All
+    	Require all granted
+    </Directory>
+</VirtualHost>

@@ -13,7 +13,7 @@
         }
     }
     else{
-        header("location:/Real_Talk/login");
+        header("location:/login");
     }
 
 ?>
