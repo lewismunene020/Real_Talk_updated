@@ -1,6 +1,6 @@
 <?php
    
-    $conn = mysqli_connect("localhost" ,"lewis" ,"Tvc@MuneneMysql" , "realtalk");
+    $conn = mysqli_connect("localhost" ,"realtalk" ,"Tvc@RealTalk" , "realtalk");
     // $conn = mysqli_connect("localhost" ,"root" ,"" , "realtalk");
 
 
